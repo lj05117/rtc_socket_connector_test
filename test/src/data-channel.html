@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        #messageList{
+            width: 500px;
+            height: 100px;
+            border:solid;
+            overflow-y:auto;
+        }
+    </style>
+</head>
+<body>
+    <p>Socket ID: <span id="socketId">not connected</span></p>
+    <p>Target ID: <input type="text" id="targetInput"></p>
+    <p><button id="connectBtn">CONNECT</button></p>
+    <p>Connected Socket ID: <span id="connectedSocketId">null</span></p>
+    <div id="messageList"></div>
+    <div class="form"><input type="text" id="messageInput"><button id="sendBtn" disabled>SEND</button></div>
+    <script src="./data-channel.ts"></script>
+</body>
+</html>
